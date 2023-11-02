@@ -21,7 +21,7 @@ $ kubectl --namespace azfarns port-forward jenkins-example 8080:8080
 $ 
 
 back to the old gitbash:
-$ kubectl get pods -n lwns
+$ kubectl get pods -n azfarns
 $ ./helm.exe repo add grafana https://grafana.github.io/helm-charts 	
 $ ./helm.exe repo update
 $ ./helm.exe upgrade --install loki grafana/loki-stack --set grafana.enabled=true,prometheus.enabled=true,prometheus.alertmanager.persistentVolume.enabled=false,prometheus.server.persistentVolume.enabled=false
